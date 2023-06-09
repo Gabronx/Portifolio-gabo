@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/669014ec1a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portifolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-End Developer</p>
+          <h1>Hi, I'm <span>Fabio Gabriel</span><br />From Brazil</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------about---------------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/img/img4.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Olá! Sou um desenvolvedor apaixonado por transformar ideias em
+              soluções digitais inovadoras. Com uma mente curiosa e uma paixão
+              pela programação, encontrei minha verdadeira vocação no mundo do
+              desenvolvimento de software. <br /><br />Sempre busco aprender e
+              crescer no campo do desenvolvimento, participando de cursos,
+              conferências e mantendo-me atualizado com os avanços mais
+              recentes. Acredito que o aprendizado contínuo é fundamental para
+              se destacar em um campo em constante evolução como o
+              desenvolvimento de software.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Landing Page</span><br />Design / Functional /
+                  Responsive
+                </li>
+                <li><span>Web Development</span><br />Site / E-Commerce</li>
+                <!-- <li>
+                  <span>App Development</span><br />Building Android/IOS apps
+                </li> -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022 - Current</span><br />Suporte T.I. - Gestauto
+                </li>
+                <li>
+                  <span>2022 - Current</span><br />Desenvolvedor Front-end -
+                  Gestauto
+                </li>
+                <!-- <li>
+                  <span>App Development</span><br />Building Android/IOS apps
+                </li> -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2016</span><br />Introdução à informática - SENAC/PR
+                </li>
+                <li><span>2017</span><br />Excel/Word/PowerPoint - SENAC/PR</li>
+                <li>
+                  <span>2022</span><br />Source Control Management (git) - UDEMY
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------------- Services ------------------------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Landing Page</h2>
+            <p>
+              Uma landing page responsiva e bem projetada é a chave para
+              capturar a atenção dos visitantes, despertar seu interesse e
+              convertê-los em clientes. Minha abordagem envolve combinar
+              habilidades técnicas sólidas em HTML, CSS e JavaScript com uma
+              compreensão profunda do comportamento do usuário e das melhores
+              práticas de design.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Acredito que um site bem projetado é uma ferramenta poderosa para
+              impulsionar o crescimento dos negócios e alcançar o sucesso
+              online. Minha abordagem envolve combinar habilidades técnicas em
+              HTML, CSS, JavaScript e outras tecnologias relevantes com uma
+              visão estratégica para criar soluções web personalizadas e
+              de alta qualidade.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <!-- <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
+              optio eos, saepe reprehenderit labore voluptates fuga. Iure
+              exercitationem, ullam inventore itaque repellendus, suscipit dolor
+              esse est, odit sint quaerat unde?
+            </p>
+            <a href="#">Learn more</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------- portfolio --------------------------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/img/fundo-fluxo.png" />
+            <div class="layer">
+              <h3>Cadastro de endereço</h3>
+              <p>Fluxo de cadastramento de endereço responsive</p>
+              <a href="https://gabocep.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/img/fundo-gestauto2.png" />
+            <div class="layer">
+              <h3>Portal Gestauto</h3>
+              <p>Tela de login Gestauto e reset senha</p>
+              <a
+                href="https://portalgestautobrasil.netlify.app/"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/img/fundo-lp.png" />
+            <div class="layer">
+              <h3>Landing Page</h3>
+              <p>Landing page responsive</p>
+              <a href="https://gabofood.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">Coming Soon...</a>
+      </div>
+    </div>
+
+    <!-- -----------------------------------Contact----------------------------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              >Fabiogabriel.work@hotmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+55 (041) 98577-5695</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/people/Fabio-Gabriel"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/straingabo" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/Gabronx" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/fabio-gabriel-11b495225/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="img/CV_FabioGabriel.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your E-mail"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy straingabo.</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwZiYgVrhcYFX533Kbt9hzurUZqto2kt4qXLq9iRljfGfTb-YoFAJI8ZguTkmoPZIMdtA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
